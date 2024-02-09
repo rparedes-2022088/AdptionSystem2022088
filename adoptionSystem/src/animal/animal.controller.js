@@ -59,3 +59,7 @@ export const eliminarAnimal = async(req, res)=>{
         return res.status(500).send({message: 'Error deleting animal'})
     }
 }
+
+export const getAnimals = async () => {
+    return Animal.find({});
+};
